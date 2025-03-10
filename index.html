@@ -17,9 +17,6 @@
 
         }
         body {
-			background: url('../Downloads/jmbad print.jpg') no-repeat center center fixed;
-            background: url('../Downloads/472482296_17844169686430535_9089444557651551481_n.jpg') no-repeat center center fixed;
-            background: url('../Downloads/472711149_17844120267430535_1421921040943452252_n.jpg') no-repeat center center fixed;
 			background: black;
             background-size: cover;
             height: 100vh;
@@ -28,11 +25,22 @@
             align-items: center;
             text-align: center;
         }
+		
+        video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+        }
+		
+		
         h1 {
             font-size: 3rem;
 			text-transform: uppercase;
-
-
+		            z-index: 1;
 
         }
 		
@@ -40,11 +48,17 @@
             font-size: 3rem;
 			  text-decoration: underline;
 			  text-underline-offset: 6px;
+			            z-index: 1;
+
         }
 		
     </style>
 </head>
 <body>
+	    <video autoplay loop muted>
+        <source src="video/jmbad-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
     <h1>
 	<a target="_blank" href="https://www.instagram.com/jmbad.jmbad/">JMBAD</a>
 		<br>  
